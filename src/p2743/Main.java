@@ -1,4 +1,4 @@
-package p27866;
+package p2743;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class Main {
         String string;
         Scanner sc = new Scanner(System.in);
         string = sc.nextLine();
-        int input = sc.nextInt() - 1;
-        System.out.println(string.charAt(input));
+        int length = string.length();
+        System.out.println(length);
     }
 }
