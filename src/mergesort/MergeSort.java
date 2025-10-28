@@ -1,8 +1,5 @@
-package p2751;
-
-import java.io.*;
-
-public class Main {
+package mergesort;
+public class MergeSort {
     private static int[] sorted;
 
     public static void mergeSort(int[] a) {
@@ -56,19 +53,6 @@ public class Main {
 
         for(int i = left; i <= right; i++) {
             a[i] = sorted[i];
-        }
-    }
-
-    public static void main(String[] args) throws IOException{
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int a = Integer.parseInt(br.readLine());
-        int[] array = new int[a];
-        for(int i = 0; i < a; i++) {
-            array[i] = Integer.parseInt(br.readLine());
-        }
-        mergeSort(array);
-        for(int i = 0; i < a; i++) {
-            System.out.println(array[i]);
         }
     }
 
